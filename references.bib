@@ -1,0 +1,585 @@
+% We would expect a typical report at this level to have at least 10 or
+% more main references (to papers, books, etc).
+% In addition, you can include references to internet sources, or other sources (e.g. personal
+% communications, interviews, etc.)
+
+% http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#Bibliography_styles
+
+%%%%%% Glossary %%%%%%
+@incollection{britannica,
+  author = {Erik Gregersen},
+  year = {2013},
+  title = {BitTorrent},
+  booktitle = {Encyclopedia Britannica},
+  url = {http://www.britannica.com/EBchecked/topic/1731662/BitTorrent},
+  note = "Last accessed 24-March-2014"
+}
+
+@misc{swarm,
+  title = "What To Do If You Are Named in a Bit-Torrent Lawsuit",
+  author = {{Nolo - Legal Advice}},
+  url   = "http://www.nolo.com/legal-encyclopedia/what-to-do-if-your-named-bit-torrent-lawsuit.html",
+  year = "2014",
+  note = "Last accessed 27-March-2014"
+}
+
+@misc{piratebaylegal,
+  author = {{The Pirate Bay}},
+  title = {{Legal Threats}},
+  url = {http://proxybay.eu/legal},
+  year = {2010}, 
+  note = "Last accessed 24-March-2014"
+}
+
+%%%%%%%%%% Intro %%%%%%%%%%
+@unpublished{cameron2014audio,
+    author = "Hugh Cameron",
+    title = "Transitions between consumer electronics formats: the case of audio recording",
+    note  = "Draft paper in preparation for publication.",
+    year = "2014"
+}
+
+@book{reese2000java,
+ author = {Reese, George},
+ editor = {Oram, Andy},
+ title = {Database Programming with JDBC and Java, Second Edition},
+ year = {2000},
+ isbn = {1565926161},
+ edition = {2nd},
+ publisher = {O'Reilly \& Associates, Inc.},
+ address = {Sebastopol, CA, USA},
+} 
+
+%%%%%%%%%% LEGAL CASES %%%%%%%%%%%%%%
+@misc{bpivsukisps,
+    author    = {{High Court of Justice}},
+    title     = {{Dramatico Entertainment Ltd \& Ors v British Sky Broadcasting Ltd \& Ors}},
+    howpublished = "British and Irish Legal Information Institute",
+    year     = "2012",
+    month    = feb,
+    note = "[2012] 3 CMLR 14, [2012] RPC 27, [2012] EWHC 268 (Ch), [2013] Bus LR D24, [2012] ECDR 14"
+}
+
+@misc{courtofjustice2012,
+    author = {{Court of Justice}},
+    year    = "2006",
+    note   = "Cited in \citet{bpivsukisps}"
+}
+
+%http://www.bailii.org/cgi-bin/markup.cgi?doc=/ew/cases/EWHC/Ch/2013/2058.html&query=EZTV&method=boolean
+@misc{footballvseztv,
+    author    = {{High Court of Justice}},
+    title     = {{The Football Association Premier League Ltd v British Sky Broadcasting Ltd \& Ors}},
+    howpublished = "British and Irish Legal Information Institute",
+    year     = "2013",
+    month    = feb,
+    note = "EWHC 2058 (Ch)"
+}
+
+@misc{fungvsmpaa, 
+    author    = {{United States Court of Appeals}},
+    title     = {{Columbia Pictures Industries, Inc. v. Fung}},
+    year      = "2013",
+    month    = mar,
+    note     = "710 F.3d 1020 No. 10-55946"
+}
+
+@misc{bigcrook07,
+    author    = {{Hong Kong Magistrates Court at Teun Mun}},
+    title     = {{HKSar v Chan Nai Ming}},
+    year      = "2005",
+    url       = {http://legalref.judiciary.gov.hk/lrs/common/ju/ju_frame.jsp?DIS=46722},
+    note     = {TMCC1268/2005 Last accessed 24-March-2014}
+}
+
+%%%%%%%% Torrenting %%%%%%%%
+% http://www.bittorrent.org/bittorrentecon.pdf
+@article{bittorrentrobustness2003,
+  author = {Bram Cohen},
+  title = {{Incentives Build Robustness in BitTorrent}},
+  journal = {Workshop on Economics of Peer-to-Peer Systems},
+  year = {2003},
+  note = "Inventor of the BitTorrent protocol"
+}
+
+@misc{torrentdefinition,
+  author = {{Wikipedia}},
+  title = {{Glossary of BitTorrent terms}},
+  url = "http://en.wikipedia.org/wiki/Glossary_of_BitTorrent_term",
+  year = {2012}, 
+  note = "Last accessed 25-March-2014"
+}
+
+%%%%%%%%%% OVERVIEWS OF TORRENTING %%%%%%%%%%
+% http://web.archive.org/web/20061107130140/http://www.cachelogic.com/home/pages/studies/2005_07.php
+@techreport{cachelogictruep2p, 
+    author    = "Andrew Parker",
+    institution = "CacheLogic",
+    title     = {{The true picture of peer-to-peer filesharing}},
+    year      = "2004"
+}
+
+@techreport{cachelogicp2p2,
+    author    = {{CacheLogic}},
+    title     = "P2P in 2005",
+    institution = "CacheLogic",
+    year      = "2005",
+    url     = "http://web.archive.org/web/20061018024808/www.cachelogic.com/home/pages/studies/2005_06.php",
+    note    = "Last accessed 25-March-2014"
+}
+
+% https://www.sandvine.com/downloads/general/global-internet-phenomena/2013/2h-2013-global-internet-phenomena-report.pdf
+@techreport{sandvinereport,
+    author    = {{SandVine}},
+    title     = "Global Internet Phenomena",
+    institution = "SandVine",
+    year      = "2013",
+    url     = {https://www.sandvine.com/downloads/general/global-internet-phenomena/2013/2h-2013-global-internet-phenomena-report.pdf},
+    note    = "Last accessed 26-March-2014"
+}
+
+% http://www.cs.unibo.it/babaoglu/courses/cas04-05/papers/bittorrent.pdf
+@incollection{p2pmeasurements,
+    year={2005},
+    isbn={978-3-540-29068-1},
+    booktitle={Peer-to-Peer Systems IV},
+    volume={3640},
+    series={Lecture Notes in Computer Science},
+    editor={Castro, Miguel and Renesse, Robbert},
+    doi={10.1007/11558989_19},
+    title={The Bittorrent P2P File-Sharing System: Measurements and Analysis},
+    publisher={Springer Berlin Heidelberg},
+    author={Pouwelse, Johan and Garbacki, Pawel and Epema, Dick and Sips, Henk},
+    pages={205-216}
+}
+
+@misc{top10trackers2014,
+    author    = {{TorrentFreak}},
+    title     = {{Top 10 Popular Torrent Sites of 2014}},
+    year     = "2014",
+    url    = "http://torrentfreak.com/top-10-popular-torrent-sites-2014-140104/",
+    note     = "Last accessed 25-March-2014"
+}
+
+%%%%% Figures of bittorrent %%%%%%%%
+@misc{history13,
+    author    = "Georgi Dalakov",
+    title     = {{BitTorrent of Bram Cohen}},
+    howpublished = "History of Computers",
+    year     = "2013",
+    note     = "Last accessed 29-March-2014",
+    url      = {http://history-computer.com/Internet/Conquering/BitTorrent.html}
+}
+
+@misc{gogrid,
+    author    = "Michael Sheehan",
+    title     = {Peer-To-Peer Is NOT "Cloud Computing"},
+    url      = "http://blog.gogrid.com/2009/05/07/peer-to-peer-is-not-cloud-computing-but.../",
+    year     = "2009",
+    note     = "Last accessed 26-March-2014"
+}
+
+%%%%%%%%% LEGAL STUFFS %%%%%%%
+% 179 - 181intellectualproperty
+@book{intellectualproperty,
+    author    = "J. Rosen",
+    title     = {{Intellectual Property at the Crossroads of Trade}},
+    publisher = "Edward Elgar Publishing",
+    year      = "2012",
+    month    = jan
+}
+
+@article{telegraphpirate,
+  author = "Christopher Williams",
+  year = "2012",
+  title = "The Pirate Bay faces UK ban after High Court ruling",
+  journal = "The Telegraph"
+}
+
+@misc{cdpa,
+    author    = {{Her Majesty's Stationery Office}},
+    title     = {{Copyright, Designs and Patents Act}},
+    address   = "London, TSO",
+    year     = "1988",
+}
+
+@misc{dea2010,
+    author    = {{Her Majesty's Stationery Office}},
+    title     = {{Digital Economy Act}},
+    address   = "London, TSO",
+    year     = "2010",
+}
+
+% http://www.legislation.gov.uk/ukpga/2010/24
+% http://heinonline.org/HOL/Page?handle=hein.journals/newenjic17&div=10&id=&page=&collection=journals#275
+@article{currentstateofbittorrent,
+    author    = "Stephen Bright",
+    title     = "The Current State of BitTorrent in International Law: Why  Law is Ineffective and What Needs to Change",
+    year      = "2011",
+    journal   = "New England Journal of International and Comparative Law",
+    note     = "17 New Eng. J. Int'l \& Comp. L. 265"
+}
+
+@article{MDE:MDE2634,
+    author = {Klumpp, Tilman},
+    title = {File Sharing, Network Architecture, and Copyright Enforcement: An Overview},
+    journal = {Managerial and Decision Economics},
+    issn = {1099-1468},
+    doi = {10.1002/mde.2634},
+    year = {2013}
+    %url = {http://dx.doi.org/10.1002/mde.2634},
+}
+
+%%%%%%%%% BLOCKS %%%%%%%%
+@misc{emivsisp,
+    author    = {{High Court of Justice}},
+    title     = {{EMI Records Ltd \& Ors v British Sky Broadcasting Ltd \& Ors}},
+    howpublished = {{British and Irish Legal Information Institute}},
+    year     = "2013",
+    month    = feb,
+    note = "[2013] Bus LR 884, [2013] WLR(D) 86, [2013] EWHC 379 (Ch)"
+}
+
+@misc{skycopyright, 
+    author  = {{Sky Broadband}},
+    title = "Our approach to protecting ",
+    year    = 2014,
+    url = "http://help.sky.com/security/privacy/our-approach-to-protecting-copyright/",
+    note     = "Last accessed 30-March-2014"
+}
+
+@misc{bbcblock21, 
+    author  = {{BBC News}},
+    title = "ISPs told to block 21 pirate sites",
+    year    = 2013,
+    month   = oct,
+    url = "http://www.bbc.co.uk/news/technology-24726078",
+    note     = "Last accessed 26-March-2014"
+}
+
+@misc{bbcblocks2,
+    author  = {{BBC News}},
+    title = "UK court orders block on two file-sharing sites",
+    year    = 2013,
+    month   = jul,
+    url = "http://www.bbc.co.uk/news/technology-23408107",
+    note     = "Last accessed 27-March-2014"
+}
+
+@article{meale2013triple,
+  title={A triple strike against piracy as the music industry secures three more blocking injunctions},
+  author={Meale, Darren},
+  journal={Journal of Intellectual Property Law \& Practice},
+  volume={8},
+  number={8},
+  pages={591--594},
+  year={2013},
+  publisher={Oxford Univ Press}
+}
+
+@article{meale2013premier,
+    author = {Meale, Darren}, 
+    title = {Premier League 1, Internet pirates 0: sports streaming website the latest to be blocked},
+    volume = {8}, 
+    number = {11}, 
+    pages = {821-823}, 
+    year = {2013}, 
+    doi = {10.1093/jiplp/jpt165}, 
+    abstract ={Section 97A blocking injunctions are fast becoming an established weapon in the previously ineffective arsenal of rightsholders seeking to curb online piracy. For the first time the jurisdiction has been relied upon by the sports industry, to protect the lucrative rights to broadcast Premier League football and other major sporting events against streaming website firstRow1.eu.}, 
+    URL = {http://jiplp.oxfordjournals.org/content/8/11/821.abstract}, 
+    eprint = {http://jiplp.oxfordjournals.org/content/8/11/821.full.pdf+html}, 
+    journal = {Journal of Intellectual Property Law \& Practice} 
+}
+
+%%%%%%%% MISC WEBSITES %%%%%%%
+@misc{factuk2014,
+    author = {{Federation Against Copyright Theft}},
+    title   = "Content Theft",
+    year    = "2014",
+    url     = "http://www.fact-uk.org.uk/about/",
+    note     = "Last accessed 29-March-2014"
+}
+
+@misc{ccc2014,
+    author = {{Creative Coalition Campaign}},
+    title   = "Intellectual Property Matters",
+    year    = "2014",
+    url     = "http://www.creativecoalitioncampaign.org.uk/index.php/site/why",
+    note     = "Last accessed 29-March-2014"
+}
+
+@misc{bpi2013,
+    author = {{British Phonographic Industry}},
+    title   = "Digital Music Nation",
+    year    = "2013",
+    url     = "https://www.bpi.co.uk/assets/files/BPI_Digital_Music_Nation_2013.PDF",
+    note     = "Last accessed 29-March-2014"
+}
+
+@misc{exchangerate2008,
+    author = {{X-Rates}},
+    title   = "Monthly Average",
+    year    = "2008",
+    url     = "http://www.x-rates.com/average/?from=EUR&to=GBP&year=2008",
+    note     = "Last accessed 31-March-2014"
+}
+
+@misc{eurostat,
+    author = {{European Commission}},
+    title   = "Eurostat",
+    year    = "2008",
+    url     = "http://epp.eurostat.ec.europa.eu/"
+}
+
+@techreport{pwc2009,
+    author    = {{PriceWaterhouseCoopers}},
+    title     = "Global entertainment and media outlook 2009-2013 – 10th annual edition",
+    institution = "PriceWaterhouseCoopers LLP",
+    year      = "2009",
+    url      = "http://www.pwc.ch/user_content/editor/files/publ_techno/pwc_global_entertain_media_outlook_summary.pdf",
+    note     = "Last accessed 30-March-2014"
+}
+
+
+
+%%%%%%%% File sharing is bad %%%%%%%%%%
+@article{europeeconomics2008,
+  author={{Europe Economics}},
+  title={{Jobs, tax and contribution to the UK economy: the impacts of reducing illicit peer-to-peer file-sharing}},
+  journal={Journal of Law and Economics},
+  year=2008,
+  month=dec,
+  note   = "Commissioned by an ``unnamed client'' from the creative bodies of the UK"
+}
+
+% http://www.keepeek.com/Digital-Asset-Management/oecd/science-and-technology/piracy-of-digital-content_9789264065437-en#page1
+@book{oecd2009,
+		author = "Piotr Stryszowski and Danny Scorpecci",
+		title = "Piracy of Digital Content",
+		year = "2009",
+		month = jul,
+		publisher = "OECD Publishing",
+		%url = "http://dx.doi.org/10.1787/9789264065437-en",
+		doi = "10.1787/9789264065437-en"
+}
+
+@techreport{tera2010,
+    author    = {{TERA Consultants}},
+    title     = "Building a Digital Economy : The Importance of Saving Jobs in the EU’s Creative Industries",
+    institution = "International Chamber of Commerce/BASCAP",
+    year      = "2010"
+}
+
+%%%%%%% OTHER BAD %%%%%
+% http://papers.ssrn.com/sol3/papers.cfm?abstract_id=511763
+@article{peitz2004,
+    author    = "Martin Peitz and Patrick Waelbroeck",
+    title     = "The Effect of Internet Piracy on CD Sales: Cross-Section Evidence",
+    journal   = "CESifo Working Paper Series No. 1122",
+    year      = "2004",
+    month    = jan
+}
+
+@article{zentner2006,
+  author={Zentner, Alejandro},
+  title={{Measuring the Effect of File Sharing on Music Purchases}},
+  journal={Journal of Law and Economics},
+  year=2006,
+  volume={49},
+  number={1},
+  pages={63-90},
+  month=apr
+} 
+
+%%%%%%%% File sharing is good %%%%%%%%%%
+% http://ipts.jrc.ec.europa.eu/publications/pub.cfm?id=6084
+@techreport{aguiar2013,
+    author    = "Luis Aguiar and Bertin Martens",
+    title     = "Digital Music Consumption on the Internet: Evidence from Clickstream Data",
+    institution = "European Commission, Institute for Prospective Technological Studies",
+    year      = "2013",
+    month     = mar,
+    note = "EUR 25851 EN"
+}
+
+% http://www.lse.ac.uk/media@lse/documents/MPP/LSE-MPP-Policy-Brief-9--and-Creation.pdf
+@article{lse2013,
+  author={Bart Cammaerts and Robin Mansell and Bingchun Meng},
+  title={{A Case for Promoting Inclusive Online Sharing}},
+  journal={London School of Economics and Political Science},
+  year="2013",
+  month=sep
+}
+
+% http://eprints.lse.ac.uk/33905/1/LSEMPPBrief1.pdf
+@article{lse2011,
+  author = "Bart Cammaerts and Bingchun Meng",
+  title = "Creative Destruction and Copyright Protection",
+  journal={London School of Economics and Political Science},
+  year = "2011",
+  month = mar
+}
+
+@article{hammond13,
+    author    = "Robert G Hammond",
+    title     = "Profit Leak? Pre-Release File Sharing and the Music Industry",
+    journal   = "Southern Economic Journal",
+    year      = "2013",
+    month    = oct,
+    note     = "0038-4038",
+    %url     = "http://dx.doi.org/10.4284/0038-4038-2013.059".
+    doi = {10.4284/0038-4038-2013.059},
+    issn = {0038-4038}
+}
+
+@misc{lescure2013,
+    author = "Pierre Lescure",
+    title = "Culture-acte 2 : 80 propositions sur les contenus culturels numériques (Culture-act 2: 80 proposals on digital cultural content)",
+    year = "2013",
+    month = may,
+    url = "http://culturecommunication.gouv.fr/Actualites/En-continu/Culture-acte-2-80-propositions-sur-les-contenus-culturels-numeriques",
+    note = "Last accessed 1-April-2014, Translated from French using Google Translate"
+}
+
+@article{guardian2013hadopi,
+  author = "Siraj Datoo",
+  year = "2013",
+  month = jul,
+  title = "France drops controversial 'Hadopi law' after spending millions",
+  journal = "The Guardian",
+  url = "http://www.theguardian.com/technology/2013/jul/09/france-hadopi-law-anti-piracy",
+  note = "Last accessed 29-March-2014"
+}
+
+%%%%%%% THE BLOCKS ARE BAD %%%%%%
+
+@inproceedings{musictank2013,
+    author    = "MusicTank",
+    title     = "Follow The Money: Can The Business Of Ad-Funded Piracy Be Throttled?",
+    booktitle = "Transcript of `Big Tech' Debate",
+    address  = "Fyvie Hall, University of Westminster",
+    year      = "2013",
+    month    = may,
+    publisher = "MusicTank",
+    url       = "http://www.musictank.co.uk/events/bigtech",
+    note      = "Last accessed 1-April-2014"
+}
+
+@misc{torrentfreak2013google,
+    author = "Andy Maxwell",
+    title = "Pirate Site Blocking Just Leads To A Game Of Whac-a-Mole",
+    year = "2013",
+    month = may,
+    url = "http://torrentfreak.com/google-pirate-site-blocking-just-leads-to-a-game-of-whac-a-mole-130529/",
+    note      = "Last accessed 30-March-2014"
+}
+
+@misc{bbc2012piratebay,
+    author = "Dave Lee",
+    title = "More piracy sites faced with blocking as BPI contacts UK ISPs",
+    howpublished = "BBC",
+    year = "2012",
+    month = oct,
+    url = "http://www.bbc.co.uk/news/technology-20026271",
+    note = "Last accessed 25-March-2014"
+    
+}
+
+@misc{nielsen2012,
+    author = {{Nielsen Net Ratings}},
+    year    = "2012",
+    note   = "Cited in \citet{bbc2012piratebay}"
+}
+
+@misc{killock2013ORG,
+    author = {{Jim Killock}},
+    title = "About the Open Rights Group",
+    url = "https://www.openrightsgroup.org/blog/2013/court-blocking-orders-lack-transparency",
+    howpublished = "\citet{org2014}",
+    note = "Last accessed 2-April-2014",
+    month = feb,
+    year = 2013
+}
+
+@misc{org2014,
+    author = {{OpenRightsGroup}},
+    title = "The Open Rights Group",
+    url = "https://www.openrightsgroup.org/",
+    note = "Last accessed 1-April-2014",
+    year = 2014
+}
+    
+@article{duah2013injunction,
+    author = {Duah, Ebenezer},
+    title = {An injunction to prevent access to copyright infringing content, or perhaps not yet: UK perspective},
+    journal = {International Review of Law, Computers \& Technology},
+    volume = {27},
+    number = {1-2},
+    pages = {46-59},
+    year = {2013},
+    doi = {10.1080/13600869.2013.764134}
+}
+
+@misc{proxylist2014,
+    author = {{The Pirate Bay Proxy List}},
+    title = "The Pirate Bay Proxy List",
+    year = 2014,
+    url = "http://www.piratebayproxylist.com/",
+    note = "Last accessed 2-April-2014"
+}
+
+@misc{comein2014,
+    author = "{{Come In}}",
+    title = "In — Unlock Bittorrent!",
+    year = 2014,
+    url = "http://come.in/",
+    note = "Last accessed 2-April-2014"
+}
+
+%%%%%%%%%%% The Blocks are Good %%%%%%%%%%%%%%%%
+
+@misc{ndpgroup2013,
+    author = {{NPD Group}},
+    year    = "2013",
+    note   = "Cited in \citet{ribeiro2013court}"
+}
+
+@article{ribeiro2013court,
+    author = "John Ribeiro",
+    title = "UK Court Orders Block of Three Torrent Sites",
+    journal = "CIO Magazine",
+    year = "2013",
+    month = mar,
+    url = "http://www.cio.com/article/729606/UK_Court_Orders_Block_of_Three_Torrent_Sites",
+    note = "Last accessed 3-April-2014"
+}
+    
+%%%%%%%%%%%%%% APPENDIX %%%%%%%%%
+@misc{cohen2008,
+    author = "Bram Cohen",
+    title = "The BitTorrent Protocol Specification",
+    url = "http://www.bittorrent.org/beps/bep_0003.html",
+    note = "Last accessed 20-March-2014",
+    year = 2008,
+    month = jan
+    %bittorrentrobustness2003    
+}
+
+@misc{peoples2012hadopi,
+    author = "Glenn Peoples",
+    title = "France's Hadopi: 2 Convictions, 1 Fine, 1.25 Million Warnings Since 2009",
+    url = "http://www.billboard.com/biz/articles/news/1483616/frances-hadopi-2-convictions-1-fine-125-million-warnings-since-2009",
+    note = "Last accessed 24-March-2014",
+    year = 2012,
+    month = dec
+}
+
+@article {danaher2012hadopi,
+    author = "Danaher, Brett and Smith, Michael D. and Telang, Rahul and Chen, Siwen",
+    title = {The Effect of Graduated Response Anti-Piracy Laws on Music Sales: Evidence from an Event Study in France},
+    journal = {Social Science Research Network},
+    doi = {10.2139/ssrn.1989240},
+    year = {2012},
+    month = jan
+    %url = {http://dx.doi.org/10.1002/mde.2634},
+}

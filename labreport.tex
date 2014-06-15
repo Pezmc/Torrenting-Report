@@ -1,0 +1,112 @@
+% this TeX file provides an awesome example of how TeX will make super 
+% awesome tables, at the cost of your of what happens when you try to make a
+% table that is very complicated.
+\documentclass[11pt]{article}
+
+% Use wide margins, but not quite so wide as fullpage.sty
+\marginparwidth 0.5in 
+\oddsidemargin 0.25in 
+\evensidemargin 0.25in 
+\marginparsep 0.25in
+\topmargin 0.25in 
+\textwidth 6in \textheight 8 in
+% That's about enough definitions
+
+% Line
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+% Reference in harvard
+%\usepackage[round, authoryear]{natbib}
+\usepackage[english]{babel}% Recommended
+\usepackage{csquotes}% Recommended
+
+\usepackage[backend=bibtex,
+natbib=true,firstinits=true,style=authoryear,sorting=nyt,doi=true,url=true]{biblatex}
+\bibliography{references}
+\setlength\bibitemsep{1.1\itemsep}
+
+\DeclareNameAlias{sortname}{last-first}
+
+\renewcommand*{\finalnamedelim}{%
+  \ifnumgreater{\value{liststop}}{2}{\finalandcomma}{}%
+  \addspace\&\space}
+  
+% pictures!
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+% multirow allows you to combine rows in columns
+\usepackage{multirow}
+% tabularx allows manual tweaking of column width
+\usepackage{tabularx}
+% longtable does better format for tables that span pages
+\usepackage{longtable}
+\usepackage{array}
+% counts how many pages there are
+\usepackage{lastpage}
+%euros
+\usepackage{eurosym}
+% indent
+\usepackage{indentfirst}
+
+% Put bib in TOC
+\usepackage[nottoc, section, notlot, notlof]{tocbibind} %nottoc, numbib
+
+% Add H to table to force here
+\usepackage{float}
+\restylefloat{table}
+
+% maths
+\usepackage{amsmath}
+
+% adjust header/footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+% URL's
+\usepackage{hyperref}
+\usepackage{breakurl}
+
+% Appendix
+\usepackage[page, titletoc]{appendix}
+
+% Glossery
+\usepackage[toc,section=section]{glossaries}
+\makeglossaries
+
+% TODO's \todo, \listoftodos, \missingfigure
+\usepackage{todonotes}
+
+% Control of footnotes
+\usepackage{footmisc}
+
+% header and footer
+\rfoot{\thepage\ of \pageref{LastPage}}
+\cfoot{}
+\lfoot{7565025}
+
+% our document
+\begin{document}
+
+\include{title}
+
+% define words
+\include{glossary}
+
+% the actual contents
+\include{contents}
+
+% references
+
+%\addcontentsline{toc}{chapter}{References}
+%\bibliographystyle{plainnat}
+\printbibliography
+% printbibliography[<options for printing>]
+
+% appendix
+\include{appendix}
+
+
+
+
+\end{document}

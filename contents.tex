@@ -1,0 +1,294 @@
+% Marking criteria:
+%     How good is your question?
+%     How well did  answer the question?
+
+% 1500 words + 10% margin
+% Do not repeat words: penalties for needless length
+% Include name, student number and seminar leaders name
+% Produce evidence and support
+
+% Include an abstract (around 50 words)
+% Aim at an intelligent reader who does not know about your case
+% Make your case interesting and readable
+
+% REPORT
+% Use sections (headers and numbers)
+% You can use bullet points, graphs, tables, pictures
+
+% Include the research question on the report
+% What is the timescale? recent past; future?
+% Include the word count
+
+%% _Quantitative_ information is very important achieving a good mark
+
+% Tables/figures/graphs do not go towards the word count
+% Page Numbers
+% Put graphs inline…
+
+% Figures:
+%      Give a figure number and a title
+%      Label graphs axes
+%      Label units
+%      underneath each graph include the reference - detailed source
+
+% Use academic writing style
+%     Use third person, don’t use slang, this is a report
+%     Use sections/text boxes/bullet points
+%
+%     Avoid fashionable superlatives
+
+% Don’t do it…
+% Very clearly identify quotations with “ “’s and referencing
+% To be sure put quotations in italics
+
+% You can use "ideas" but not words…
+% Put copied work somewhere else - don’t paste into the original document
+
+% Topics covered
+% 1. Introduction: innovation and its pervasive effects; perspectives. 
+% 2. Case studies of innovation and impacts. 
+% 3. Long term impacts of technological change (Steel processing, computerisation, mass production).
+% 4. Economics and technological change. 
+% 5. Technology strategy and firms. 
+% 6. The role of small firms in innovation. 
+% 7. The Product Life Cycle and markets. 
+% 8. Networks, standards and formats. 
+% 9. Dominant designs, lock-in and systems. 
+% 10. Innovation in services. 
+% 11. Intellectual property rights: the system and its use. 
+% 12. Defence R+D and Innovation.
+     
+% On your first page include an abstract (very brief description of what the report is about – about 50 words)
+% contents list (these are not included abstract)
+% Also add a few (3 or 4 or 5?) key words at the end of these are used by journals for indexing
+
+% Example structure
+% 1. Introduction
+% 2. Development of the Product 500w
+% 3. Competition
+% 4. Failure in the Market
+% 5. Conclusions
+
+\tableofcontents
+\listoffigures
+\listoftables
+\printglossaries
+
+\clearpage
+
+% How does torrenting affect the media industry in the UK?
+% Should the UK continue to block torrenting websites?
+
+\section{Introduction} % 100 words
+
+While the technology behind torrenting is legal \citep{MDE:MDE2634}, it is used to download copyrighted materials \citep{currentstateofbittorrent}. %without permission of the publishers 
+There is legal controversy over the use of torrent networks \citep{duah2013injunction}. Some users argue the \gls{torrent} network is legal regardless of whether the associated files violate copyright law \citep{piratebaylegal}.
+
+Piracy has been a concern for the media industry since the `double deck' cassette player allowed users to duplicate cassettes. In the digital age, media can be duplicated and distributed on torrent networks. \citep{cameron2014audio, currentstateofbittorrent}.
+
+This report will highlight how the increase of copyrighted works being `torrented' affects the UK media industry and will review the effectiveness of the UK torrent blocks.
+
+\section{Torrenting} %400 words
+
+`Torrenting' is slang referring to the downloading of files using the BitTorrent protocol \citep{britannica}, a popular \Gls{peer} to Peer (P2P) file-sharing network\footnote{Further details in Appendix \ref{app:bittorrent}} \citep{p2pmeasurements, cachelogictruep2p, cachelogicp2p2}. 
+%  that has ``stood the test of time''
+
+\subsection{Popularity}
+
+\citet{sandvinereport} found that BitTorrent was the most popular P2P protocol in Europe, second only to YouTube in overall Internet traffic (Table~\ref{table:sandvinereport}).
+
+Moving from the growth phase to the maturity stage of the product lifecycle, access to BitTorrent is becoming easier due to enhanced torrent \glspl{client}, better understanding, and easy to follow tutorials. It is at the early majority stage in the technology adoption lifecycle with conservative users beginning to use the network. 
+
+% Table 6 - Top 10 Peak Period Applications - Europe, Fixed Access
+\input{tables/sandvinepeakapplications.tex}
+
+\subsection{Technology}
+
+It is important to differentiate between a `traditional download' and one on the BitTorrent network. Traditionally, a remote server stores the file which downloads to the user \citep[Chapter 7.]{reese2000java}.
+%
+On the BitTorrent network, the file is downloaded from the other network users whilst simultaneously uploading `pieces' of the file to one another \citep{bittorrentrobustness2003} (Fig.~\ref{fig:clientVSp2p}).
+% 
+This process starts with a \textit{.torrent}\footnote{Downloaded from the selected tracker} which contains important information but significantly no part of the file itself\footnote{Appendix \ref{app:torrentprocess}} \citep{bittorrentrobustness2003}. 
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{clientvsp2p}
+    \caption{Client/Server VS Peer2Peer Network \citep{gogrid}}
+    \label{fig:clientVSp2p}
+\end{figure}
+
+The network operates on an incentive basis; each user's download speed is scaled by a sharing ratio (Fig~\ref{figure:scaling}), discouraging users from sharing slows the network and reduces the files available \citep{bittorrentrobustness2003}.
+
+\begin{figure}[h]
+    \centering
+    
+    \[ \mbox{share ratio} = \frac{\mbox{total data uploaded}}{\mbox{total data downloaded}} \]
+    
+    \caption{Share/seeding ratio equation for a BitTorrent client \citep{bittorrentrobustness2003}}
+    \label{figure:scaling}
+\end{figure}
+
+\section{Intellectual Property Rights}
+
+% SHOULD I DEFINE COPYRIGHT AS AN EXAMPLE OF IPR?
+As BitTorrent operates without a central authority, liability for copyright infringement on the network falls upon the users of the system \citep{currentstateofbittorrent}.
+
+\subsection{Legal Options}
+There are two legal options for firms wishing to discourage torrenting of their content; place liability on those who are sharing the content (uploading) or on those who are downloading content.
+%
+However it is technically difficult\footnote{See Appendix \ref{app:legaloptions} for further details.} to track a download occurring \citep{MDE:MDE2634}.
+
+% Move to the appendix?
+As knowledge of how to effectively prosecute has increased \citep{currentstateofbittorrent}, prosecutors are no longer targeting the individual users, but the \glspl{tracker} supporting the network, such as The Pirate Bay \citep[p.179 - 181]{fungvsmpaa, intellectualproperty}.
+
+\subsection{In the UK}
+
+Most trackers are based abroad \citep{top10trackers2014}, meaning responsibility of prosecution falls within international intellectual property law \citep[III.]{currentstateofbittorrent}.
+%
+To avoid this complexity, UK media companies, represented by the British Phonographic Industry (BPI)\footnote{More than 300 music and record companies in the UK \citep{bpi2013}}, sought to make the \gls{isp}'s providing access to the copyrighted content liable \citep{bpivsukisps, meale2013triple}.
+
+% What is an ISP?
+The landmark case was BPI vs. The 6 Largest UK \gls{isp}'s\footnote{Who held a ``fixed line market share of 94\% of Internet users in the UK'' at the time}. The court concluded\footnote{See Appendix \ref{app:bpiVtpb}} that both the users and the operators of The Pirate Bay were liable for copyright infringement.
+%
+The final judgement served an injunction against the \gls{isp}'s as ``service providers'' \citep[97A]{cdpa} ordering them to `adopt technical means to block'' access to The Pirate Bay\footnote{In addition to any website designed to enable access} \citep{bpivsukisps, meale2013triple}.
+
+The number of blocks against UK \gls{torrent} websites has increased since 2012, with relevant judgements referring to this case. In 2013, 28 websites\footnote{See Table~\ref{table:courtorders} in the appendix.} were found guilty of file sharing and blocked \citep{emivsisp, footballvseztv, skycopyright, bbcblock21, bbcblocks2, meale2013premier}.
+
+\subsection[Keeping IP Laws Up to Date]{Keeping Intellectual Property Laws Up to Date}
+
+% "In 2010 it was claimed that implementation of blocks would generate a 70% reduction in online copyright infringement (using file sharing)." \lse{2013}
+
+To address online copyright infringement, the Digital Economy Act (DEA) was written. There are two phases; 1. sending warnings to customers suspected of infringement;
+%If this is unsuccessful in decreasing copyright infringement, 
+2. allowing ISP's to disconnect persistent infringers from the Internet \citep{dea2010}.
+
+There is strong opposition against the act. \citet{lse2011} found that it ``gets the balance between copyright enforcement and innovation wrong''. They highlighted \textit{disruptive technologies}, such as the Photocopier and Cassette Recorder, previously blamed by the media industry for loss of revenue. % however industry innovation has accommodated them into modern life.
+% The research suggests that instead of enforcing ``heavy-handed'' copyright law
+Research suggests the music industry should focus on enabling ``users to download music legally at a reasonable price'' \citep{lse2011}.
+%
+It was also found that the decline in sales of recorded music could be attributed to other factors, including changing music consumption patterns, decreasing disposable income, and increasing sales of digital content (see Fig.~\ref{fig:digitalrevenue}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{digitalrevenue}
+    \caption{Worldwide online sales of music 2004-2010. Adapted from \citet[Fig. 3]{lse2011}}
+    \label{fig:digitalrevenue}
+\end{figure}
+
+% What is the infrincement
+% Suing the downloaders
+% Suing the uploders
+% Going after the trackers
+
+\section{Effect of Torrenting}
+
+\citet{pwc2009} reports that there was a decline in recorded and digital music sales across the EU from 2004 to 2008, with revenues in the digital market falling by 26\%. Research until 2011 (Fig~\ref{fig:musicindustry}) shows this decline continuing. Further studies attribute this decrease to digital piracy \citep{tera2010,peitz2004,zentner2006}. The UK media industry supports this conclusion \citep{factuk2014, ccc2014, bpi2013}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{musicindustry}
+    \caption{Trends in Revenues of the Music Industry, USD Million. Adapted from \citet[Fig. 1]{lse2013}}
+    \label{fig:musicindustry}
+\end{figure}
+
+%On the other hand
+Conversely, research from the London School of Economics suggests torrenting might increase revenue in the media industry \citep{lse2013, hammond13,aguiar2013}.
+
+\subsection{Negative Effects}
+
+The International Chamber of Commerce commissioned a report\footnote{As part of the Business Action to Stop Counterfeiting and Piracy (BASCAP) initiative} quantifying the effects of ``piracy on retail revenue'' \citep{tera2010}.  
+%
+%The research split the creative industries into `core'\footnote{``Press and literature'' and ``Music, Video, Software''} and `non-core'\footnote{Any industry that supports the former, such as manufacturers of televisions or musical instruments}.
+Using data from the European Commission Eurostat database \citep{eurostat}, \citet{tera2010} calculated the value of the UK ``creative industries'' (Table~\ref{table:creativeindustryweight}), finding the creative industries form 6.2\% of UK GDP. %, and employ 5.4\% of the UK workforce.
+%
+%Taking the number of infringements per year (Table~\ref{table:infringementsperyear}) and applying a substitution rate (see Table~\ref{table:substitution}) 
+The loss to the media industry\footnote{Calculated taking the number of infringements per year (Table~\ref{table:infringementsperyear}), applying a substitution rate (Table~\ref{table:substitution})} in 2008 was \pounds{533} million\footnote{\label{foot1}Figures converted from EUR to GBP at 0.796651, the average 2008 exchange rate \citep{exchangerate2008}.}\footnote{Loss to music was \pounds{224} million, film \pounds{245} million and TV series \pounds{62} million.} \citep[p.31]{tera2010}.
+
+\input{tables/weightofcreativeindustrires.tex}
+\input{tables/infringementsperyear.tex}
+\input{tables/substitution.tex}
+
+The report concludes that piracy significantly harms the creative industries and as broadband becomes more commonplace, without ``sustained and effective action'' \citep[p.46]{tera2010}, digital piracy in Europe will continue to grow, in line with similar reports \citep{europeeconomics2008, oecd2009}. As these reports are often commissioned by bodies representing the media industry their reliability is questionable.
+
+\subsection{Opposition}
+
+Research by \citet{lse2013} extends findings from \citet{lse2011}, that ``data provided by the music industry were misleading'' and the ``industry was doing reasonably well.''. It concludes that the evidence reviewed did not support the claims from the media industry of `revenue reduction' due to copyright infringement.
+% Make this shorter
+They found ``punitive measures'' in France proposed by the industry did not have the desired impact, with the HAPOPI'\footnote{An acronym of the department that the law created} law being abolished\footnote{See Appendix \ref{app:hadopi}}.
+
+\citet{lse2013} recommend that the DEA needs to be reviewed, following independent research, to form fair legislation on copyright infringement.
+%\citet{lse2013} recommends, following independent research of the media industries claims that the DEA needs to be reviewed, to form fair legislation on copyright infringement.
+
+A report by \citet{aguiar2013}\footnote{commissioned by the European Joint Research Centre,}, observed the digital media purchasing patterns of 16,000 European consumers, finding increases in illegal downloads and legal streaming led to an increase in legal purchases, with a \textit{purchase elasticity} of 0.04 and a \textit{`visit' elasticity} 0.06.
+
+%Finding the  was positive and linear at 0.04 , noting that a 10\% increase in illegal downloading lead to a 0.2\% increase in legal purchases.
+%In addition they found that a 10\% increase in visits to legal streaming websites lead to a 0.7\% , with an elasticity of 0.06 in the UK, supporting the innovation in the media industry would lead to increases in media sales.
+
+Further research from \citet{hammond13} looked into the effect of media `leaked'\footnote{Download available from BitTorrent before the official release} onto BitTorrent, finding that leaked albums cause a small increase in legal sales and not the decrease the media industry claims.
+%``small relative to ... promotional efforts'' such as plays on the radio. 
+% LORNA SAYS DELETE THIS
+
+\section{Blocks in the UK}
+
+The UK media industry has been successful in securing High Court injunctions against \glspl{isp}'s, ordering them to ``adopt ... technical means'' \citep{bpivsukisps} to block trackers supporting BitTorrent network, with the intention of cutting copyright infringement. 
+
+New evidence suggests that blocks have been ineffective in reducing torrenting, however the findings should be taken lightly due to the recent nature of the reports, limited supporting evidence, and lack of peer reviews \citep{bbc2012piratebay, duah2013injunction}. % and that they're not research papers
+
+%%%%% OTHERS NEEDED HERE %%%%
+
+\subsection{Supporting Evidence}
+
+When discussing the effectiveness of previous blocks, the \citet{bpivsukisps} noted that blocking the Pirate Bay in Italy had resulted in a 73\% reduction in visits and a 96\% reduction of page views \citep{meale2013triple}.
+
+The \citet{ndpgroup2013} cited in \citet{ribeiro2013court} noted a decline in illegal music sharing on P2P during 2012, observing a 17\% decrease in activity, but added that ``The primary reason for the reduced sharing ... was an increased use of free, legal music streaming services'' and not the blocks put in place.
+
+Despite being cited in news articles defending the blocks \citep{bbc2012piratebay}, the BPI and others from the media industry are yet to reference any evidence demonstrating their effectiveness in reducing UK activity on BitTorrent.
+
+\subsection{Opposing Evidence}
+
+In a University of Westminster debate, Google's UK policy manager Theo Bertram opposed the blocks, highlighting that targeting the business is more effective, referring to the ``now-defunct'' MegaUpload\footnote{A popular file hosting service, commonly used for piracy},  explaining that its supply has ``shifted to ... middle-ranking pirate sites.''. He warned that targeting individual piracy sites ends in a game of ``whac-a-mole'' \citep{torrentfreak2013google, musictank2013}.
+
+\citet{bbc2012piratebay} reported one week after the block of the Pirate Bay, falling ``illegal download traffic'' on one \gls{isp}'s network returned to normal as users found ways around the blocks.
+%
+It is easy for both the operators of trackers and the users to circumvent them\footnote{Particularly with the haste of services designed to avoid the block}\footnote{Appendix \ref{app:avoidingblocks}} \citep{duah2013injunction, bbc2012piratebay, proxylist2014, comein2014}.
+%
+The BPI defended the block, noting statistics (Fig. \ref{fig:piratebayblock}) from Nielsen Net Ratings showing traffic to the Pirate Bay website had dropped \citep{bbc2012piratebay}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{piratebayblock}
+    \caption{Traffic to The Pirate Bay (\citet{nielsen2012} cited in \citet{bbc2012piratebay})}
+    \label{fig:piratebayblock}
+\end{figure}
+
+The Open Rights Group\footnote{Who campaign on digital rights and freedom issues \citep{org2014}} responded to the blocks, stating that blocking is extreme and will lead to ``new forms of distributed infringement''. They advised the BPI's tactics ``may have the opposite effect'', ``legitimising and promoting resistance to their actions.'' \citep{killock2013ORG}.
+%adding ``users and the public interest have not been represented in the processes'' .
+
+\citet{duah2013injunction} discusses the blocks, commenting they do not offer a ``complete solution'' and that a ``significant number of blocks'' is needed to effectively cover all infringing websites.
+%
+Enforcing a block is not a passive process, as the copyright holder or the \gls{isp} must continually scan the situation to keep the blocks up to date. \citet{duah2013injunction} notes it is still unclear who is responsible for this task.
+
+\section{Conclusions}
+
+% "It is quite unusual to include references in this section, as it is mainly a review of what has already been said."
+
+Given the position of BitTorrent in the product and technology adoption lifecycles, usage will continue to increase and as such, clear evidence based legislation is needed.
+
+The case against BitTorrent references reports commissioned by the UK media industry increasing the likelihood of bias. Independent reports argue in favour of BitTorrent, suggesting other factors, including changing music consumption patterns and increasing sales of digital content, affect the media industry.
+
+Initial research suggests the use of blocks to control access to copyright material is ineffective and that blocks are easy to mitigate. It has yet to be shown that blocks lead to any decrease in the activity of sharing on the BitTorrent network.
+
+Having reviewed the evidence:
+\begin{enumerate}
+\item Independent research into the effect of digital piracy on the media industry needs to be completed to offer a more reliable base for decisions.
+\item The effect of the recent tracker blocks on sharing copyrighted material on the BitTorrent network in the UK should be researched.
+\item On completion of this further research, the DEA should be revised in light of the findings to support the legislation or suggest changes.
+\item The media industry should innovate legal uses of BitTorrent to distribute media and drive sales, rather than continuing to pursue legal means to prevent its use. %, as seen with driving sales of music using radio.
+\end{enumerate}
+ 
+Overall, to justify continuing to block torrenting websites, significant independent evidence that the blocks are effective, and that torrenting is negatively affecting the media industry, is needed. 
+
+In future, when updating UK law, the government should observe research from independent sources, rather than from those whom the law may benefit.
+
+Finally, the media industry may benefit from adopting BitTorrent, working with this technology, rather than against it.
